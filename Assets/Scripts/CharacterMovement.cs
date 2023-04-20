@@ -11,14 +11,16 @@ public class CharacterMovement : MonoBehaviour
     public Rigidbody2D _myRigidBody;
     [SerializeField] private float _moveSpeed = 10f;
     [SerializeField] private float _jumpForce = 10f;
-    private Vector2 myVector2;
+    private Vector2 _movement = new Vector2();
+
+    private float horizontalInput;
+    private float verticalInput;
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.A))
-        {
-
-        }
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
+        _movement(horizontalInput, verticalInput);
     }
 
     private void FixedUpdate()
