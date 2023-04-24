@@ -452,12 +452,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1661295759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03917aed4dc43ec4e918148f1bde26f8, type: 3}
+  m_Script: {fileID: 11500000, guid: df8ccda9febfa444e85cdc3e55d74be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _myRigidBody: {fileID: 1661295763}
-  _moveSpeed: 30
-  _jumpForce: 1
+  _jumpForce: 0
+  _movementSpeed: 30
+  _jumpHeigth: 1
+  _counterJumpForce: {x: 10, y: 10}
 --- !u!4 &1661295762
 Transform:
   m_ObjectHideFlags: 0
